@@ -13,4 +13,8 @@ Suits is an American television drama series created by *Aaron Korsh*, which pre
 
 ```
 
-## 
+## 2. A photo with the logo or a shot from the show itself.
+
+```{r}
+![`logo`](`https://en.wikipedia.org/wiki/File:Suits_Logo.png`)
+```
