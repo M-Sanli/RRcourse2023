@@ -16,5 +16,17 @@ Suits is an American television drama series created by *Aaron Korsh*, which pre
 ## 2. A photo with the logo or a shot from the show itself.
 
 ```{r}
-![`logo`](`https://en.wikipedia.org/wiki/File:Suits_Logo.png`)
+#![`logo`](`https://en.wikipedia.org/wiki/File:Suits_Logo.png`)
 ```
+
+## 3. A summary of some basic statistics (e.g. on viewership or ratings).
+
+\| No. in season \| Title \| viewers(millions) \|
+
+\|\-\-\-\-\-\-\-\-\-\-\-\-\-\--\|\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--\|\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--\|
+
+\| 1 \| Pilot \| 4.64 \|
+
+\| 2 \| Errors and Omissions \| 3.89 \|
+
+\| 3 \| Inside Track \| 4.53 \|
