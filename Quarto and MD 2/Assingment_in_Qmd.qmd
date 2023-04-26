@@ -5,8 +5,12 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## 1. A brief description of the show (use italics for names).
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Suits is an American television drama series created by *Aaron Korsh*, which premiered on June 23, 2011 on the USA Network. It revolves around *Mike Ross* (*Patrick J. Adams*), who begins working as a law associate for *Harvey Specter* (*Gabriel Macht*), despite never attending law school. The show focuses on *Harvey* and *Mike* managing to close cases, while maintaining Mike's secret.
+
+```{r}
+
+```
 
 ## 
