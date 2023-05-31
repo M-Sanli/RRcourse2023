@@ -32,6 +32,10 @@ contour_colors <- c("darkblue", "blue", "lightblue")
 funnel(meta_boys, contour = contour_levels, col.contour = contour_colors)
 legend("topright", c("p < 0.10", "p < 0.05", "p < 0.01"), bty = "n", fill = contour_colors)
 
+contour_levels <- c(0.90, 0.95, 0.99)
+contour_colors <- c("darkblue", "blue", "lightblue")
+funnel(meta_girls, contour = contour_levels, col.contour = contour_colors)
+legend("topright", c("p < 0.10", "p < 0.05", "p < 0.01"), bty = "n", fill = contour_colors)
 
 meta_boys %>% metareg(~ 'country')
 meta_girls %>% metareg(~ 'country')
