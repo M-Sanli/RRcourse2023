@@ -29,4 +29,22 @@ Manifest is an American supernatural drama television series created by _Jeff Ra
 * The show was watched by an average of 8.2 million viewers.
 * Manifest was cancelled by NBC in 2022. However, the show was acquired by Netflix and will return in 2023 with a six-episode final season.
 
+## 4. Graph of the viewership
+
+```{python}
+import matplotlib.pyplot as plt
+
+# Verileri al
+data = [12.8, 7.8, 5.4, 4.2]
+x_values = range(1, len(data) + 1)
+
+# Grafiği çiz
+plt.plot(x_values, data)
+plt.xlabel("Episodes")
+plt.ylabel("Avg. Viewership (in millions)")
+plt.title("Viewership of Manifest Series Over Time")
+plt.xticks(x_values)
+plt.show()
+
+```
 
