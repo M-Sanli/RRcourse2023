@@ -34,16 +34,44 @@ Manifest is an American supernatural drama television series created by _Jeff Ra
 ```{python}
 import matplotlib.pyplot as plt
 
-# Verileri al
+# Import the data
 data = [12.8, 7.8, 5.4, 4.2]
 x_values = range(1, len(data) + 1)
 
-# Grafiği çiz
+# Graph
 plt.plot(x_values, data)
 plt.xlabel("Episodes")
 plt.ylabel("Avg. Viewership (in millions)")
 plt.title("Viewership of Manifest Series Over Time")
 plt.xticks(x_values)
+plt.show()
+
+```
+
+## 5. Graph of the Episode-to-Episode Changes in Viewership
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Import the data.
+data = pd.read_csv("episodes_viewership.csv")
+
+# Get the episode number, season, viewership, and change from previous episode.
+episode = data["Episode"]
+season = data["Season"]
+viewership = data["Viewership (millions)"]
+change = data["Change from previous episode"]
+
+# Plot the episode-to-episode viewership.
+plt.plot(episode, viewership)
+
+# Add a title and labels to the axes.
+plt.title("Manifest Episode-to-Episode Viewership")
+plt.xlabel("Episode")
+plt.ylabel("Avg. Viewership (in millions)")
+
+# Show the plot.
 plt.show()
 
 ```
