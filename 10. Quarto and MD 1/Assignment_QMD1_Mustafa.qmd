@@ -14,8 +14,19 @@ smooth-scroll: true
 
 # Manifest (TV Series)
 
-## Description of the Show
+## 1. Description of the Show
 
 Manifest is an American supernatural drama television series created by _Jeff Rake_ that premiered on September 24, 2018, on NBC. It centers on the passengers and crew of a commercial airliner who suddenly reappear after being presumed dead for five and a half years. It stars _Melissa Roxburgh_, _Josh Dallas_, _Athena Karkanis_, _J. R. Ramirez_, _Luna Blaise_, _Jack Messina_, _Parveen Kaur_, _Matt Long_, _Holly Taylor_, _Daryl Edwards_, and _Ty Doran_.
 
+
+## 2. Logo of Manifest
+
 ![Manifest Logo](logo/manifest_logo.png)
+
+## 3. Some basic statistics
+
+* The first episode was watched by 12.8 million viewers on 16 September 2018.
+* The show was watched by an average of 8.2 million viewers.
+* Manifest was cancelled by NBC in 2022. However, the show was acquired by Netflix and will return in 2023 with a six-episode final season.
+
+
