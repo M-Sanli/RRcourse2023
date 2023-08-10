@@ -1,0 +1,92 @@
+---
+title: "QMD2_Assignment"
+author: "Mustafa Sanli"
+date: today
+date-format: short
+format:
+  html:
+    theme: superhero
+    title-block-banner: true
+    toc: true
+    toc-location: right
+  docx: default
+smooth-scroll: true
+---
+
+# Manifest (TV Series)
+
+## 1. Description of the Show
+
+Manifest is an American supernatural drama television series created by _Jeff Rake_ that premiered on September 24, 2018, on NBC. It centers on the passengers and crew of a commercial airliner who suddenly reappear after being presumed dead for five and a half years. It stars _Melissa Roxburgh_, _Josh Dallas_, _Athena Karkanis_, _J. R. Ramirez_, _Luna Blaise_, _Jack Messina_, _Parveen Kaur_, _Matt Long_, _Holly Taylor_, _Daryl Edwards_, and _Ty Doran_.
+
+
+## 2. Logo of Manifest
+
+![Manifest Logo](logo/manifest_logo.png)
+
+## 3. Some basic statistics
+
+* The first episode was watched by 12.8 million viewers on 16 September 2018.
+* The show was watched by an average of 8.2 million viewers.
+* Manifest was cancelled by NBC in 2022. However, the show was acquired by Netflix and will return in 2023 with a six-episode final season.
+
+::: {.panel-tabset}
+
+## 4. Graph of the viewership
+
+```{python}
+
+import matplotlib.pyplot as plt
+
+# Import the data
+data = [12.8, 7.8, 5.4, 4.2]
+x_values = range(1, len(data) + 1)
+
+# Graph
+plt.plot(x_values, data)
+plt.xlabel("Episodes")
+plt.ylabel("Avg. Viewership (in millions)")
+plt.title("Viewership of Manifest Series Over Time")
+plt.xticks(x_values)
+plt.show()
+
+```
+
+## 5. Graph of the Episode-to-Episode Changes in Viewership
+
+```{python}
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Import the data.
+data2 = pd.read_csv("episodes_viewership.csv")
+
+# Get the episode number, season, viewership, and change from previous episode.
+episode = data2["Episode"]
+season = data2["Season"]
+viewership = data2["Viewership (millions)"]
+change = data2["Change from previous episode"]
+
+# Plot the episode-to-episode viewership.
+plt.plot(episode, viewership)
+
+# Add a title and labels to the axes.
+plt.title("Manifest Episode-to-Episode Viewership")
+plt.xlabel("Episode")
+plt.ylabel("Avg. Viewership (in millions)")
+
+# Show the plot.
+plt.show()
+
+```
+:::
+
+
+## 6. Short Description of the Observed Changes
+
+```{python}
+
+changes = data[0] - data[1]
+print("The viewership decreased by " +str(changes)[:3]+ " million viewers between seasons 1 and 2.")
+```
