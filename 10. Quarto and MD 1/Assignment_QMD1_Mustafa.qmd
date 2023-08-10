@@ -84,4 +84,3 @@ plt.show()
 changes = data[0] - data[1]
 print("The viewership decreased by " +str(changes)[:3]+ " million viewers between seasons 1 and 2.")
 ```
-## 7. 
