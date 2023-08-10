@@ -91,6 +91,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#some-basic-statistics" id="toc-some-basic-statistics" class="nav-link" data-scroll-target="#some-basic-statistics">3. Some basic statistics</a></li>
   <li><a href="#graph-of-the-viewership" id="toc-graph-of-the-viewership" class="nav-link" data-scroll-target="#graph-of-the-viewership">4. Graph of the viewership</a></li>
   <li><a href="#graph-of-the-episode-to-episode-changes-in-viewership" id="toc-graph-of-the-episode-to-episode-changes-in-viewership" class="nav-link" data-scroll-target="#graph-of-the-episode-to-episode-changes-in-viewership">5. Graph of the Episode-to-Episode Changes in Viewership</a></li>
+  <li><a href="#short-description-of-the-observed-changes" id="toc-short-description-of-the-observed-changes" class="nav-link" data-scroll-target="#short-description-of-the-observed-changes">6. Short Description of the Observed Changes</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">7.</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -177,13 +179,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the data.</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">"episodes_viewership.csv"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>data2 <span class="op">=</span> pd.read_csv(<span class="st">"episodes_viewership.csv"</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the episode number, season, viewership, and change from previous episode.</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>episode <span class="op">=</span> data[<span class="st">"Episode"</span>]</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>season <span class="op">=</span> data[<span class="st">"Season"</span>]</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>viewership <span class="op">=</span> data[<span class="st">"Viewership (millions)"</span>]</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>change <span class="op">=</span> data[<span class="st">"Change from previous episode"</span>]</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>episode <span class="op">=</span> data2[<span class="st">"Episode"</span>]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>season <span class="op">=</span> data2[<span class="st">"Season"</span>]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>viewership <span class="op">=</span> data2[<span class="st">"Viewership (millions)"</span>]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>change <span class="op">=</span> data2[<span class="st">"Change from previous episode"</span>]</span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the episode-to-episode viewership.</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>plt.plot(episode, viewership)</span>
@@ -199,6 +201,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="Assignment_QMD1_Mustafa_files/figure-html/cell-3-output-1.png" width="585" height="449"></p>
 </div>
 </div>
+</section>
+<section id="short-description-of-the-observed-changes" class="level2">
+<h2 class="anchored" data-anchor-id="short-description-of-the-observed-changes">6. Short Description of the Observed Changes</h2>
+<div class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>changes <span class="op">=</span> data[<span class="dv">0</span>] <span class="op">-</span> data[<span class="dv">1</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"The viewership decreased by "</span> <span class="op">+</span><span class="bu">str</span>(changes)[:<span class="dv">3</span>]<span class="op">+</span> <span class="st">" million viewers between seasons 1 and 2."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>The viewership decreased by 5.0 million viewers between seasons 1 and 2.</code></pre>
+</div>
+</div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">7.</h2>
 </section>
 </section>
 
