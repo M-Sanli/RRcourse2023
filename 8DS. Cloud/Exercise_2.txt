@@ -1,0 +1,51 @@
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-1030-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Aug 14 12:42:18 UTC 2023
+
+  System load:  0.02001953125     Processes:             111
+  Usage of /:   19.7% of 9.51GB   Users logged in:       1
+  Memory usage: 24%               IPv4 address for ens4: 10.186.0.2
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Mon Aug 14 12:39:55 2023 from 35.235.244.98
+mustafasanli1995@rrcloud:~$ ls -l
+total 0
+-rw-rw-r-- 1 mustafasanli1995 mustafasanli1995 0 Aug 14 12:40 test.txt
+mustafasanli1995@rrcloud:~$ mkdir rr
+mustafasanli1995@rrcloud:~$ cd rr
+mustafasanli1995@rrcloud:~/rr$ touch test.txt
+mustafasanli1995@rrcloud:~/rr$ nano new.txt
+mustafasanli1995@rrcloud:~/rr$ cp /etc/modules .
+mustafasanli1995@rrcloud:~/rr$ ls -lS
+total 8
+-rw-r--r-- 1 mustafasanli1995 mustafasanli1995 195 Aug 14 12:48 modules
+-rw-rw-r-- 1 mustafasanli1995 mustafasanli1995  20 Aug 14 12:48 new.txt
+-rw-rw-r-- 1 mustafasanli1995 mustafasanli1995   0 Aug 14 12:47 test.txt
+mustafasanli1995@rrcloud:~/rr$ rmdir rr
+rmdir: failed to remove 'rr': No such file or directory
+mustafasanli1995@rrcloud:~/rr$ rm -r rr
+rm: cannot remove 'rr': No such file or directory
+mustafasanli1995@rrcloud:~/rr$ nano new.txt
+mustafasanli1995@rrcloud:~/rr$ cd ..
+mustafasanli1995@rrcloud:~$ rmdir rr
+rmdir: failed to remove 'rr': Directory not empty
+mustafasanli1995@rrcloud:~$ rm -r rr
+mustafasanli1995@rrcloud:~$ cd rr
+-bash: cd: rr: No such file or directory
+mustafasanli1995@rrcloud:~$ 

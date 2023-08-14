@@ -1,0 +1,136 @@
+Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.19.0-1030-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Aug 14 12:54:22 UTC 2023
+
+  System load:  0.0               Processes:             103
+  Usage of /:   19.7% of 9.51GB   Users logged in:       1
+  Memory usage: 25%               IPv4 address for ens4: 10.186.0.2
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Mon Aug 14 12:42:19 2023 from 35.235.243.50
+mustafasanli1995@rrcloud:~$ ps aux cpu
+error: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+mustafasanli1995@rrcloud:~$ ps aux | grep cpu
+root          10  0.0  0.0      0     0 ?        I<   12:37   0:00 [mm_percpu_wq]
+root          18  0.0  0.0      0     0 ?        S    12:37   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    12:37   0:00 [cpuhp/1]
+root         234  0.0  0.0      0     0 ?        I    12:37   0:00 [kworker/1:3-mm_percpu_wq]
+root        1684  0.0  0.0      0     0 ?        I    12:47   0:00 [kworker/0:1-mm_percpu_wq]
+mustafa+    1806  0.0  0.2   7004  2228 pts/0    R+   12:58   0:00 grep --color=auto cpu
+mustafasanli1995@rrcloud:~$ ifconfig | tail -n 3
+Command 'ifconfig' not found, but can be installed with:
+apt install net-tools
+Please ask your administrator.
+mustafasanli1995@rrcloud:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: ens4: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc mq state UP group default qlen 1000
+    link/ether 42:01:0a:ba:00:02 brd ff:ff:ff:ff:ff:ff
+    altname enp0s4
+    inet 10.186.0.2/32 metric 100 scope global dynamic ens4
+       valid_lft 2109sec preferred_lft 2109sec
+    inet6 fe80::4001:aff:feba:2/64 scope link 
+       valid_lft forever preferred_lft forever
+mustafasanli1995@rrcloud:~$ ip a | tail -n 3
+       valid_lft 2084sec preferred_lft 2084sec
+    inet6 fe80::4001:aff:feba:2/64 scope link 
+       valid_lft forever preferred_lft forever
+mustafasanli1995@rrcloud:~$ cd /etc
+mustafasanli1995@rrcloud:/etc$ ls
+PackageKit                     group            modprobe.d              rsyslog.conf
+X11                            group-           modules                 rsyslog.d
+adduser.conf                   grub.d           modules-load.d          screenrc
+alternatives                   gshadow          mtab                    security
+apparmor                       gshadow-         multipath               selinux
+apparmor.d                     gss              multipath.conf          services
+apport                         hdparm.conf      nanorc                  shadow
+apt                            host.conf        needrestart             shadow-
+bash.bashrc                    hostname         netconfig               shells
+bash_completion                hosts            netplan                 skel
+bash_completion.d              hosts.allow      network                 sos
+bindresvport.blacklist         hosts.deny       networkd-dispatcher     ssh
+binfmt.d                       init.d           networks                ssl
+boto.cfg                       initramfs-tools  newt                    subgid
+byobu                          inputrc          nftables.conf           subgid-
+ca-certificates                iproute2         nsswitch.conf           subuid
+ca-certificates.conf           iscsi            nvme                    subuid-
+ca-certificates.conf.dpkg-old  issue            opt                     sudo.conf
+chrony                         issue.net        os-release              sudo_logsrvd.conf
+cloud                          kernel           overlayroot.conf        sudoers
+console-setup                  kernel-img.conf  overlayroot.local.conf  sudoers.d
+cron.d                         landscape        pam.conf                sysctl.conf
+cron.daily                     ld.so.cache      pam.d                   sysctl.d
+cron.hourly                    ld.so.conf       passwd                  systemd
+cron.monthly                   ld.so.conf.d     passwd-                 terminfo
+cron.weekly                    ldap             perl                    timezone
+crontab                        legal            pm                      tmpfiles.d
+cryptsetup-initramfs           libaudit.conf    polkit-1                ubuntu-advantage
+crypttab                       libblockdev      pollinate               ucf.conf
+dbus-1                         libnl-3          ppp                     udev
+debconf.conf                   locale.alias     profile                 ufw
+debian_version                 locale.gen       profile.d               update-manager
+default                        localtime        protocols               update-motd.d
+deluser.conf                   logcheck         python3                 update-notifier
+depmod.d                       login.defs       python3.10              usb_modeswitch.conf
+dhcp                           logrotate.conf   rc0.d                   usb_modeswitch.d
+dpkg                           logrotate.d      rc1.d                   vim
+e2scrub.conf                   lsb-release      rc2.d                   vmware-tools
+ec2_version                    lvm              rc3.d                   vtrgb
+environment                    machine-id       rc4.d                   wgetrc
+ethertypes                     magic            rc5.d                   xattr.conf
+fstab                          magic.mime       rc6.d                   xdg
+fuse.conf                      manpath.config   rcS.d                   zsh_command_not_found
+gai.conf                       mdadm            resolv.conf
+google_instance_id             mime.types       rmt
+groff                          mke2fs.conf      rpc
+mustafasanli1995@rrcloud:/etc$ cd /etc/network
+mustafasanli1995@rrcloud:/etc/network$ pwd
+/etc/network
+mustafasanli1995@rrcloud:/etc/network$ head -n 3 interfaces
+head: cannot open 'interfaces' for reading: No such file or directory
+mustafasanli1995@rrcloud:/etc/network$ ls
+if-post-down.d  if-pre-up.d  if-up.d
+mustafasanli1995@rrcloud:/etc/network$ head -n 3 if-post-down.d
+head: error reading 'if-post-down.d': Is a directory
+mustafasanli1995@rrcloud:/etc/network$ ^C
+mustafasanli1995@rrcloud:/etc/network$ cd ..
+mustafasanli1995@rrcloud:/etc$ cd hostname
+-bash: cd: hostname: Not a directory
+mustafasanli1995@rrcloud:/etc$ cd security
+mustafasanli1995@rrcloud:/etc/security$ ls
+access.conf      faillock.conf  limits.conf  namespace.conf  namespace.init  pam_env.conf   time.conf
+capability.conf  group.conf     limits.d     namespace.d     opasswd         sepermit.conf
+mustafasanli1995@rrcloud:/etc/security$ head -n 3 time.conf
+# this is an example configuration file for the pam_time module. Its syntax
+# was initially based heavily on that of the shadow package (shadow-960129).
+#
+mustafasanli1995@rrcloud:/etc/security$ 
